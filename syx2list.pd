@@ -1,0 +1,32 @@
+#N canvas 448 163 528 395 12;
+#X obj -588 153 sel 240;
+#X obj -588 190 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg -426 222 add2 \$1;
+#X obj -508 183 sel 247;
+#X msg -507 223 add2 247;
+#X msg -588 221 set 240;
+#X msg -589 59 Construct Sysex message as list (not separate messages)
+;
+#X obj -588 102 inlet;
+#X obj -589 340 outlet;
+#X text -422 118 note: the 'bang' "after" |add2 247( is really dependent
+on WHEN it was placed on the patch--reworking it sometimes drops the
+247 from the print (really irrelevant \, since I don't need the 247
+anyway \, just need something output when the message ends at 247)
+;
+#X msg -589 303 240;
+#X obj -511 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 1 0;
+#X connect 0 1 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 10 0;
+#X connect 3 0 4 0;
+#X connect 3 1 2 0;
+#X connect 4 0 10 0;
+#X connect 4 0 11 0;
+#X connect 5 0 10 0;
+#X connect 7 0 0 0;
+#X connect 10 0 8 0;
+#X connect 11 0 10 0;
