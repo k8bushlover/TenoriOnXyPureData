@@ -1,2 +1,0 @@
-$ cat .gitattributes
-*.pd linguist-language=Pure Data
