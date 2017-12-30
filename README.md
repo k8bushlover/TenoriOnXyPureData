@@ -9,4 +9,4 @@ Used GUI elements only on main patch with sends/receives to the subpatch. (For u
 
 Not perfect--subpatch not always toggling off in time to prevent higher values from reaching the respective ctlout objects.  
 
-syx2list abstraction could MAYBE use a 1 ms delay before the 'bang' to output the list (latter 247 sometimes not added to list and sent from abstraction, although the calling patch doesn't really need it.)
+syx2list abstraction intended to receive sysexin bytes, output as list when complete 240-247 (F0-F7) message is constructed
